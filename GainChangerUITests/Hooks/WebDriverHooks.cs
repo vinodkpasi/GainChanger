@@ -21,8 +21,7 @@ namespace GainChangerUITest.Hooks
         [BeforeScenario]
         public void CreateWebDriver()
         {
-            string driverPath = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Drivers");
-            ChromeDriver driver = new ChromeDriver(driverPath);
+            ChromeDriver driver = new ChromeDriver();
             container.RegisterInstanceAs<IWebDriver>(driver);
         }
 

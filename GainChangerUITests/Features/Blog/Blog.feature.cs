@@ -19,8 +19,8 @@ namespace GainChangerUITests.Features.Blog
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Login and Export", Description="\t Login and Export Functionality", SourceFile="Features\\Blog\\Blog.feature", SourceLine=0)]
-    public partial class LoginAndExportFeature
+    [TechTalk.SpecRun.FeatureAttribute("Login and Export blog details", Description="\t Login and Export blog details functionality", SourceFile="Features\\Blog\\Blog.feature", SourceLine=0)]
+    public partial class LoginAndExportBlogDetailsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -34,7 +34,7 @@ namespace GainChangerUITests.Features.Blog
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Blog", "Login and Export", "\t Login and Export Functionality", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Blog", "Login and Export blog details", "\t Login and Export blog details functionality", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,14 +70,14 @@ namespace GainChangerUITests.Features.Blog
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Login and Export", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Login and Export blog details in json format", new string[] {
                 "smoke"}, SourceLine=4)]
-        public virtual void LoginAndExport()
+        public virtual void LoginAndExportBlogDetailsInJsonFormat()
         {
             string[] tagsOfScenario = new string[] {
                     "smoke"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login and Export", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login and Export blog details in json format", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

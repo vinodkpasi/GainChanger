@@ -1,8 +1,8 @@
-﻿Feature: Login and Export
-	 Login and Export Functionality
+﻿Feature: Login and Export blog details
+	 Login and Export blog details functionality
 
 @smoke
-Scenario: Login and Export
+Scenario: Login and Export blog details in json format
 	Given User navigate to login page
 	When User enter "gainchanger" as username
 	And User enter "justdoit" as password

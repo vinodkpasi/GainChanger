@@ -2,11 +2,7 @@
 using GainChangerUITests.Entities;
 using GainChangerUITests.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using OpenQA.Selenium;
-using System.IO;
-using System.Reflection;
-using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace GainChangerUITest.StepDefinitions
@@ -80,8 +76,7 @@ namespace GainChangerUITest.StepDefinitions
             blog.Headers1 = Util.GetAllElementsText(blogPage.Headers1);
             blog.Headers2 = Util.GetAllElementsText(blogPage.Headers2);
             blog.Paragraphs = Util.GetAllElementsText(blogPage.Paragraphs);
-            string json = JsonConvert.SerializeObject(blog);
-            File.WriteAllText("D://blog.json", json);
+            Util.ExportInJsonFile(blog, "D://blog.json");
         }
     }
 }
